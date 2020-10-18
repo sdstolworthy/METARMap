@@ -31,7 +31,7 @@ I've created detailed instructions about the setup and parts used here: https://
 - To have the script start up automatically and refresh in regular intervals, use crontab and set the appropriate interval. For an example you can refer to the crontab file in the GitHub repo (make sure you grant the file execute permissions beforehand to the refresh.sh and lightsoff.sh file). To edit your crontab type: **`crontab -e`**, after you are done with the edits, exit out by pressing **ctrl+x** and confirm the write operation
   _ The sample crontab will run the script every 5 minutes (the _/5) between the hours of 7 to 21, which includes the 21 hour, so it means it will run until 21:55 \* Then at 22:05 it will run the lightsoff.sh script, which will turn all the lights off
 
-### Using `find_cities.py`
+### Using `find_airports.py`
 
 `find_airports.py` is provided as a utility to associate LEDs with airports. Run `sudo python3 find_airports.py` to light up each LED one at a time. You can then write down the illuminated airport in your version of the `airports` file.
 
