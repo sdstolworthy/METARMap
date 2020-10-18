@@ -1,0 +1,14 @@
+[Unit]
+Description=Run the METAR poll
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /opt/metar.py
+Restart=always
+RestartSec=30
+StandardOutput=/opt/metar.log
+StandardError=/opt/metar-error.log
+SyslogIdentifier=METAR
+
+[Install]
+WantedBy=multi-user.target

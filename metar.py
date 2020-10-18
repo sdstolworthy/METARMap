@@ -2,6 +2,7 @@
 
 import urllib.request
 import xml.etree.ElementTree as ET
+from time import sleep
 import board
 import neopixel
 import time
