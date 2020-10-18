@@ -31,6 +31,10 @@ I've created detailed instructions about the setup and parts used here: https://
 	* The sample crontab will run the script every 5 minutes (the */5) between the hours of 7 to 21, which includes the 21 hour, so it means it will run until 21:55
 	* Then at 22:05 it will run the lightsoff.sh script, which will turn all the lights off
 
+### Using `find_airports.py`
+
+`find_airports.py` is provided as a utility to associate LEDs with airports. Run `sudo python3 find_airports.py` to light up each LED one at a time. You can then write down the illuminated airport in your version of the `airports` file.
+
 ## Additional Wind condition blinking/fading functionality
 I recently expanded the script to also take wind condition into account and if the wind exceeds a certain threshold, or if it is gusting, make the LED for that airport either blink on/off or to fade between  two shades of the current flight category color.
 
