@@ -8,4 +8,4 @@ for index in range(len(pixels)):
     print(index)
     pixels[index] = (255, 255, 255)
     input("press enter to continue")
-    pixel[index] = (0, 0, 0)
+    pixels[index] = (0, 0, 0)
